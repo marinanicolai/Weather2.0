@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./styles.css";
-import Home from "./Home";
-import NewsLetter from "./NewsLetter";
-import NavBar from "./NavBar";
-import ChangeLocation from "./ChangeLocation";
+import Home from "./Home/index";
+import NavBar from "./NavBar/index";
+import CurrentLocation from "./CurrentLocation/index";
+import ChangeLocation from "./ChangeLocation/index";
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           <Home />
         </Route>
         <Route path="/currentLocation">
-          <NewsLetter />
+         <CurrentLocation />
         </Route>
         <Route path="/changeLocation">
           <ChangeLocation />
