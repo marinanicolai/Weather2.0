@@ -4,11 +4,7 @@ import { StyledItem } from "./Weather.styles";
 
 const Weather = ({ weatherData }) => {
   const weather = weatherData && weatherData.weather && weatherData.weather[0];
-  const weatherMain = weather && weather.main; // Value - undefined | "clouds"
-  // const weatherMain = weather ? weather.main : null
-
-  // short-circuit evaluation (in React context as well)
-  // undefined.property
+  const weatherMain = weather && weather.main;
 
   const name = weatherData && weatherData.name;
   const main = weatherData && weatherData.main;
