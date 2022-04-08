@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home/index";
 import CurrentLocation from "./CurrentLocation";
@@ -14,7 +9,7 @@ export default function App() {
   return (
     <Router>
       <div>
-       <NavBar/>
+        <NavBar />
         <Switch>
           <Route path="/CurrentLocation">
             <CurrentLocation />
@@ -30,7 +25,3 @@ export default function App() {
     </Router>
   );
 }
-
-
-
-
