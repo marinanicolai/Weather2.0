@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home/index";
-import CurrentLocation from "./CurrentLocation";
 import ChangeLocation from "./ChangeLocation";
 
 export default function App() {
@@ -11,9 +10,6 @@ export default function App() {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/CurrentLocation">
-            <CurrentLocation />
-          </Route>
           <Route path="/ChangeLocation">
             <ChangeLocation />
           </Route>

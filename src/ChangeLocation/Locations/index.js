@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Locations extends React.Component {
   renderLocation = () => {
     return this.props.locations.map((location) => (
-      <Link key={location} to={`/changeLocation/locations/${location}`}>
+      <Link key={location} to={`/locations/${location}`}>
         {location}{" "}
       </Link>
     ));
