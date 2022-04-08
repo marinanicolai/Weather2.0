@@ -25,17 +25,12 @@ class ChangeLocation extends React.Component {
   render() {
     return (
       <>
-        <ChangeLocationNav handleNewLocation={this.handleNewLocation} />
         <Locations locations={this.state.locations} />
         {this.state.locations.length > 0 && (
           <button onClick={this.handleCilck}>Reset</button>
         )}
-
         <Switch>
-          <Route
-            path="/changeLocation/locations/:locationName"
-            component={Location}
-          />
+          <Route path="/locations/:locationName" component={Location} />
         </Switch>
       </>
     );

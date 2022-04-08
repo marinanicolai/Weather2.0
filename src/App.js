@@ -10,7 +10,7 @@ export default function App() {
       <div>
         <NavBar />
         <Switch>
-          <Route path="/ChangeLocation">
+          <Route path="/locations/">
             <ChangeLocation />
           </Route>
           <Route path="/">

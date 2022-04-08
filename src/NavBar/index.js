@@ -60,7 +60,7 @@ class NavBar extends React.Component {
         </nav>
         <Locations locations={this.state.locations} />
         {this.state.locations.length > 0 && (
-          <button onClick={this.handleCilck}>Reset</button>
+          <button onClick={this.handleClick}>Reset</button>
         )}
 
         <Switch>
