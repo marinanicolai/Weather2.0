@@ -5,7 +5,7 @@ import Weather from "../Weather/index";
 var options = {
   enableHighAccuracy: true,
   timeout: 5000,
-  maximumAge: 0
+  maximumAge: 0,
 };
 
 function error(err) {
@@ -14,7 +14,7 @@ function error(err) {
 
 class CurrentLocation extends React.Component {
   state = {
-    weatherData: null
+    weatherData: null,
   };
   success = (pos) => {
     var crd = pos.coords;
@@ -46,7 +46,7 @@ class CurrentLocation extends React.Component {
   render() {
     const { weatherData } = this.state;
 
-    return <>{weatherData && <Weather weatherData={weatherData} />}</>;
+    return weatherData ? <Weather weatherData={weatherData} /> : null;
   }
 }
 

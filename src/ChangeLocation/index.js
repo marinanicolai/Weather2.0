@@ -6,7 +6,7 @@ import ChangeLocationNav from "./ChangeLocationNav/index";
 
 class ChangeLocation extends React.Component {
   state = {
-    locations: []
+    locations: [],
   };
 
   handleNewLocation = (name) => {
@@ -32,7 +32,10 @@ class ChangeLocation extends React.Component {
         )}
 
         <Switch>
-          <Route path="/locations/:locationName" component={Location} />
+          <Route
+            path="/changeLocation/locations/:locationName"
+            component={Location}
+          />
         </Switch>
       </>
     );

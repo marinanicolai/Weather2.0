@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { StyledLink } from "./NavBar.styles";
+import { StyledLink, NavItem, NavList } from "./NavBar.styles";
 
 class NavBar extends React.Component {
   render() {
@@ -8,14 +8,24 @@ class NavBar extends React.Component {
     return (
       <>
         <nav>
-          <Link to="/">
-            <span className="logo">
-              <img src={logoUrl} alt="weathe-app-logo" />
-            </span>
-          </Link>
-          <StyledLink to="/currentLocation">Current Location</StyledLink>
-          <StyledLink to="/changeLocation">Change Location</StyledLink>
+          <NavList>
+            <NavItem>
+              <Link to="/">
+                {" "}
+                <span className="logo">
+                  <img src={logoUrl} alt="weathe-app-logo" />
+                </span>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <StyledLink to="/currentLocation">CurrentLocation </StyledLink>
+            </NavItem>
+            <NavItem>
+              <StyledLink to="/changeLocation">ChangeLocation</StyledLink>
+            </NavItem>
+          </NavList>
         </nav>
+        <hr />
       </>
     );
   }
