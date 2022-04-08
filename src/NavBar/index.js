@@ -62,7 +62,6 @@ class NavBar extends React.Component {
         {this.state.locations.length > 0 && (
           <button onClick={this.handleClick}>Reset</button>
         )}
-
         <Switch>
           <Route path="locations/:locationName" component={Location} />
         </Switch>

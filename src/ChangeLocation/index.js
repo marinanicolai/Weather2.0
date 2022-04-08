@@ -2,7 +2,6 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import Locations from "./Locations/index";
 import Location from "./Location/index";
-import ChangeLocationNav from "./ChangeLocationNav/index";
 
 class ChangeLocation extends React.Component {
   state = {
